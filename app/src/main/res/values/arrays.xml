@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="note_theme_colors">
+        <item>@color/theme_oled_dark</item>
+        <item>@color/theme_catppuccin</item>
+        <item>@color/theme_deep_plum</item>
+        <item>@color/theme_forest_spruce</item>
+        <item>@color/theme_warm_espresso</item>
+        <item>@color/theme_midnight_blue</item>
+    </array>
+</resources>

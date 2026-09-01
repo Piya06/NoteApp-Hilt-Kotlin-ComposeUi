@@ -1,0 +1,20 @@
+package com.noteapp.hiltdagger.di
+
+import com.noteapp.hiltdagger.util.AnalyticsTracker
+import com.noteapp.hiltdagger.util.AnalyticsTrackerImpl
+import dagger.Binds
+import dagger.Module
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
+import javax.inject.Singleton
+
+@Module
+@InstallIn(SingletonComponent::class)
+abstract class AnalyticsModule {
+
+    @Binds
+    @Singleton
+    abstract fun bindAnalyticsTracker(
+        analyticsTrackerImpl: AnalyticsTrackerImpl
+    ): AnalyticsTracker
+}
